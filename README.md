@@ -49,5 +49,5 @@ Basic form validation for login form is in place.
 ## Concepts covered
 Class and functional components, event handling, component compositions, conditional rendering, redux, reducers,actions, routing, error handling and modularity.
 
-## live preview of the project
-[](https://shoppingzone.herokuapp.com/)
+## Live preview of the project
+[https://shoppingzone.herokuapp.com/](https://shoppingzone.herokuapp.com/)
