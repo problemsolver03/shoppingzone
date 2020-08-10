@@ -72,7 +72,7 @@ class Login extends React.Component {
 
       	   		 <div>
       	   		 	<label>Password</label>
-						<input type="text" name="password" ref={this.password} required/>
+						<input type="password" name="password" ref={this.password} required/>
       	   		 </div>
 
 					<button type="submit" className="submit-button">

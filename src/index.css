@@ -76,7 +76,7 @@ button.active{
 	margin-bottom: 20px;
 }
 
-.form-fields div input[type="text"]{
+.form-fields div input{
 	width: 100%;
 	box-sizing: border-box;
 	height: 40px;
