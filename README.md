@@ -41,10 +41,10 @@ react, redux, redux-thunk, react-router-dom, axios, react-redux
 
 ## Miscellaneous
 
-The site is responsive until 1024px(tablet view port size)
-No CSS libraries was used for styling
-Basic error handling for API’s has been done
-Basic form validation for login form is in place.
+#The site is responsive until 1024px(tablet view port size)
+#No CSS libraries was used for styling
+#Basic error handling for API’s has been done
+#Basic form validation for login form is in place.
 
 ## Concepts covered
 Class and functional components, event handling, component compositions, conditional rendering, redux, reducers,actions, routing, error handling and modularity.
