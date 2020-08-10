@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Shoppingzone
 
-In the project directory, you can run:
+An e-commerce application to search, view,filter and add products to cart for purchase
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Login
+Search
+Search Results
+Filtering
+Add to cart
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## UI Protoypes
 
-### `npm test`
+![Login](https://user-images.githubusercontent.com/64726338/89813413-45581d00-db5f-11ea-9c13-d8c14b4dce51.png)
+![Home screen](https://user-images.githubusercontent.com/64726338/89813428-4db05800-db5f-11ea-8d78-12d5c1ccbfcb.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech stack
+HTML5, CSS3, Javascript,React and Redux.
 
-### `npm run build`
+## Packages used
+react, redux, redux-thunk, react-router-dom, axios, react-redux
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
+![direcory structure](https://user-images.githubusercontent.com/64726338/89813615-9700a780-db5f-11ea-8ac0-91574fa83819.jpg)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Component list and details
+![componentlist](https://user-images.githubusercontent.com/64726338/89813706-b8fa2a00-db5f-11ea-84d1-4eaf7dd129a2.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Redux Store design
 
-### `npm run eject`
+```
+{
+    products:[],
+    filteredProducts:[],
+    user:{user:{}},
+    inCart:[]
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Miscellaneous
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The site is responsive until 1024px(tablet view port size)
+No CSS libraries was used for styling
+Basic error handling for API’s has been done
+Basic form validation for login form is in place.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Concepts covered
+Class and functional components, event handling, component compositions, conditional rendering, redux, reducers,actions, routing, error handling and modularity.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## live preview of the project
+[](https://shoppingzone.herokuapp.com/)
