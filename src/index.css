@@ -1,13 +1,378 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --blue: #1982C4;
+  --purple:#3C1642;
+  --green:#AFFC41;
+  --sapphire:#086375;
+  --black:#333333;
+  --grey:#999999;
+  --shadow:0 5px 8px -2px rgba(0, 0, 0, 0.05);
+  --border:solid 1px #e9e9e9;
+  --inputpadding:4px 8px;
+  --radius-small:8px;
+  --radius-large:12px;
+}
+body{
+	margin:0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,button,h1,h2,h3,h4,p,label,span,small,li{
+	font-family: 'PT Sans', sans-serif;
+	color:var(--black);
+	
+}
+
+.login-holder{
+	width: 320px;
+	margin: 5% auto;
+	padding: 32px;
+	box-shadow: var(--shadow);
+	border:var(--border);
+	border-radius: var(--radius-large);
+}
+
+.login-holder h2{
+	margin-bottom: -10px
+}
+
+.login-holder p{
+	font-size:14px;
+	line-height: 1em;
+	margin-bottom:20px;
+}
+
+.action-selectors{
+	margin:15px 0;
+}
+
+.action-selectors button{
+   border:0;
+   background: #fff;
+   font-size: 16px;
+   font-weight: bold;
+   padding:var(--inputpadding);
+   border-radius: var(--radius-small);
+   cursor: pointer;
+}
+
+button.active{
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+.form-fields{
+	margin:24px 0;
+}
+
+.form-fields label{
+	display: block;
+	font-size: 16px;
+	font-weight:bold;
+	padding-bottom: 4px;
+	
+}
+
+.form-fields div{
+	margin-bottom: 20px;
+}
+
+.form-fields div input[type="text"]{
+	width: 100%;
+	box-sizing: border-box;
+	height: 40px;
+	border:var(--border);
+	padding:var(--inputpadding);
+}
+
+
+.submit-button{
+	padding: 12px 20px;
+	background: var(--blue);
+	border-radius: var(--radius-small);
+	color: #fff;
+	border:0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+.container-fluid{
+   width: 100%;
+}
+
+.header-container{
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px 0;
+}
+
+.container{
+	width: 960px;
+	margin:0 auto;
+}
+
+.flex{
+	display: flex;
+}
+
+header.flex div{
+	flex-grow: 1;
+    flex-basis: 0;
+}
+
+header.flex div:nth-child(2){
+	text-align: center;
+}
+
+
+
+.search-bar{
+	height: 36px;
+    border-radius: 20px;
+    padding: 4px 12px 4px 36px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.search-bar:focus,.search-bar:active{
+	outline: none;
+}
+
+.search-holder{
+	position: relative;
+}
+
+
+.search-holder img{
+	opacity: 0.3;
+	width: 20px;
+	position: absolute;
+	left: 8px;
+	margin-top: 12px;
+}
+
+p.user-details {
+    margin: 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: max-content;
+    float: right;
+    padding: 2px 24px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+
+.user-details span{
+	display: block;
+	font-weight: 600;
+	line-height: 1em;
+}
+
+.cart-holder{
+	text-align: right;
+}
+
+.cart{
+	position: relative;
+	display: inline-block;
+	padding-right: 10px;
+}
+.cart img{
+	width: 32px;
+	margin: 4px 20px;
+}
+.cart .count{
+   background: var(--green);
+   font-weight: 600;
+   padding: 2px 8px;
+   border-radius: var(--radius-large);
+   font-size: 16px;
+   position: absolute;
+   right: 12px;
+}
+
+.flex aside.filter{
+	width: 25%;
+	border-right: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	padding: 8px 12px;
+	height: 100vh;
+}
+
+.colorOption{
+	display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ececec;
+}
+.flex .search-results{
+	padding: 8px 12px;
+	border-right: 1px solid #e9e9e9;
+	width: 75%;
+}
+
+.small-btn{
+	font-weight: 600;
+	color: var(--blue);
+	background: #fff;
+	border:2px solid var(--blue);
+	border-radius: var(--radius-large);
+	float: right;
+}
+
+.border-bottom{
+	border-bottom: 1px solid #e9e9e9;
+	padding-bottom: 12px;
+}
+
+.filterOption {
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    max-height: 170px;
+    overflow: auto;
+}
+
+.filterOption h4{
+	margin-top: 0;
+	color: var(--purple)
+}
+
+.filterOption label{
+	font-size: 14px;
+    font-weight: 600;
+    vertical-align: text-top;
+    margin-right: 5px;
+    margin-left: 4px;
+}
+
+.filterOption .flex label{
+  display: block;
+}
+
+.filterOption input{
+	margin: 0;
+}
+
+.filterOption input[type="text"]{
+	width: 90%;
+	box-sizing: border-box;
+	padding: 4px 8px;
+	border:1px solid #ccc;
+	border-radius: 4px;
+}
+
+
+.product{
+	display: inline-block;
+	width: 200px;
+	margin:10px;
+	box-shadow: var(--shadow);
+	border-radius: 8px;
+	border:1px solid #e9e9e9;
+}
+
+.product .image-holder{
+	width: 100%;
+    height: 200px;
+    background-size: 75%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+.discount{
+	background-color: #333;
+	position: absolute;
+	width: 36px;
+	height: 44px;
+	color: #fff;
+	right: 12px;
+	top:0;
+	padding: 2px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.colors{
+	position: absolute;
+	bottom: 10px;
+	right: 12px;
+}
+
+.colors i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border:1px solid #e9e9e9;
+}
+
+
+.colors i.red{
+	background-color: red;
+}
+
+.colors i.black{
+	background-color: black;
+}
+.description-holder{
+	padding: 8px 12px;
+}
+
+.description-holder h4 {
+    margin: 0;
+    height: 40px;
+    overflow: hidden;
+}
+
+.price-holder{
+	margin-top: 12px;
+}
+
+.price{
+	color: var(--sapphire);
+	font-weight: 600;
+}
+
+.add-to-cart{
+	border:2px solid var(--green);
+	border-radius: var(--radius-large);
+	padding: 2px 12px;
+	font-weight: 600;
+	float: right;
+	margin-top: -4px;
+	background-color: #fff;
+}
+
+.add-to-cart:hover{
+	background-color: var(--green);
+	color: #333;
+	cursor: pointer;
+}
+.add-to-cart:active,.add-to-cart:focus{
+	outline: none;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.float-right{
+	float:right;
+}
+
+.error-message{
+	color: red;
+    font-weight: bold;
+}
+
+.prm-header{
+	padding-left: 12px;
 }
